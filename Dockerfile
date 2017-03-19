@@ -2,7 +2,7 @@ FROM ubuntu
 USER root
 
 RUN apt-get update && apt-get install -y git && \
-    apt-get install -y rtorrent unzip unrar mediainfo curl php7.0-fpm php7.0-cli php-geoip nginx ffmpeg supervisor && \
+    apt-get install -y rtorrent unzip unrar-free mediainfo curl php7.0-fpm php7.0-cli php-geoip nginx ffmpeg supervisor && \
     rm -rf /var/lib/apt/lists/*
 COPY . /a
 RUN mkdir -p /var/www && cd /var/www && \

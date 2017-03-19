@@ -19,4 +19,4 @@ chown -R rtorrent:rtorrent /home/rtorrent
 rm -f ${main_dir}/session/rtorrent.lock
 
 # run
-su --login --command="TERM=xterm rtorrent" rtorrent
+su --login --command="TERM=xterm rtorrent" screen -S rtorrent rtorrent

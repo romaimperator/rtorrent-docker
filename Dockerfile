@@ -13,7 +13,8 @@ RUN mkdir -p /var/www && cd /var/www && \
     cp /a/startup-rtorrent.sh \
        /a/startup-nginx.sh \
        /a/startup-php.sh \
-       /a/.rtorrent.rc /root/
+       /a/.rtorrent.rc \
+       /a/rutorrent-basic.nginx /root/
 
 EXPOSE 80 443 6999
 VOLUME /mnt/torrents
